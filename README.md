@@ -15,6 +15,7 @@ The two directories are differents application :
 
 ## Setup the app
 ```
+cd server
 php composer.phar install
 php artisan migrate --seed
 ```
