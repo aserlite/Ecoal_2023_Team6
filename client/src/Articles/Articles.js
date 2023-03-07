@@ -24,7 +24,8 @@ function Articles() {
     return (
         <>
             <h1>ok</h1>
-            {article.map(a => <li > {a.title} <br/> {a.content} </li >)}
+            {article.map(a => <li > {a.title} <br/>       <p dangerouslySetInnerHTML={{ __html: a.content }} />
+            </li >)}
         </>
     );
 }
