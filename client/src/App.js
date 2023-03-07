@@ -3,6 +3,7 @@ import './App.css';
 import Home from "./Home/Home";
 import Articles from "./Articles/Articles";
 import Slidebar from "./Slidebar/Slidebar";
+import logo from './logo.jpeg'; 
 
 
 function App() {
@@ -10,10 +11,10 @@ function App() {
   return (
     <>
       <Slidebar/>
-
-
+        
       <nav>
-        <Link to="/" className='home'>Home</Link>
+        
+        <Link to="/" className='home'><img className="logo" src={logo} alt="Logo" /></Link>
       </nav>
 
 

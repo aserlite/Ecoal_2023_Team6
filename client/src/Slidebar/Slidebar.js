@@ -7,7 +7,7 @@ function Slidebar() {
 
     return (
         <>
-            <Menu>
+            <Menu right>
                 <a id="home" className="menu-item" href="/">Home</a>
                 <Link to="/articles"><a id="about" className="menu-item" href="/articles">Articles</a></Link>
                 <a id="contact" className="menu-item" href="/contact">Contact</a>

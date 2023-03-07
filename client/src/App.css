@@ -1,17 +1,19 @@
 :root{
-  --darkpurple: #5f346e;
-  --yellow: #f0ba65;
-  --lightpurple: #b470b8;
-  --beige: #e3d9b7;
-  --pink: #d9b69b;
+
 
 }
     
 nav{
-  background-color: var(--yellow);
+  background-color: black;
   padding: 1.5rem;
+}
+ 
+.logo{
+  max-width: 5rem;
 }
 
 .home{
   padding: 2rem;
+  text-decoration: none;
+  color: white;
 }
