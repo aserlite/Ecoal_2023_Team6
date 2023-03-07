@@ -49,16 +49,27 @@ class Controller extends BaseController
     public function addarticle(Request $request){
 
 
+
         $validatedData = $request->validate([
             'title' => 'required|string',
             'content' => 'required|string',
-            'password' => 'required|string',
+            'mediaType' => 'required|string',
         ]);
 
-        $user = Article::create([
-            'name' => $validatedData['title'],
-            'email' => $validatedData['content'],
-            'password' => Hash::make($validatedData['password']),
+        $article = Article::create([
+
+            'title' => $validatedData['title'],
+            'content' => $validatedData['content'],
+            'thumbnailURL'=> "/",
+            'mediaType' => $validatedData['mediaType'],
+            'mediaURL'=> "/",
+            'leadStory' => 0,
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s'),
+        ]);
+
+        return response()->json([
+            'result' => "all good",
         ]);
     }
 }

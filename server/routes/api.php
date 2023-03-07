@@ -31,8 +31,11 @@ Route::group([
     Route::get('/user',  function (Request $request) {
                                 return $request->user();
                          });
+
+    Route::post('/addarticle',[Controller::class,'addarticle'])->middleware('admin');
 });
 
 Route::post('/single/{id}',[Controller::class,'singlearticle']);
 Route::post('/allarticle',[Controller::class,'allarticle']);
 Route::post('/bytag/{slug}',[Controller::class,'bytags']);
+
