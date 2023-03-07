@@ -29,7 +29,7 @@ Clone the repository on your computer and follow those commands :
 ```
 On another teminal : 
 ```
-  cd ../client ; npm start
+  cd client ; npm start
 ```
 
 
