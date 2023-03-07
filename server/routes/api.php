@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Controller;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -29,8 +31,8 @@ Route::group([
     Route::get('/user',  function (Request $request) {
                                 return $request->user();
                          });
-    
 });
 
-
-
+Route::post('/single/{id}',[Controller::class,'singlearticle']);
+Route::post('/allarticle',[Controller::class,'allarticle']);
+Route::post('/bytag/{slug}',[Controller::class,'bytags']);
