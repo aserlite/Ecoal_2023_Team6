@@ -18,6 +18,8 @@ The two directories are differents application :
 cd server
 php composer.phar install
 php artisan migrate --seed
+cd .. ; cd client
+npm install
 ```
 
 ## Start the app
