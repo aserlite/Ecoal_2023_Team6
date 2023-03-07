@@ -1,13 +1,10 @@
-import './Articles.css'
+import './Search.css'
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-
-function Articles() {
-
+function Search() {
 
     const [article, setArticle] = useState([])
-
 
     async function getArticles() {
         const article = (await axios.post('http://localhost:8000/api/allarticle')).data
@@ -19,15 +16,14 @@ function Articles() {
         getArticles()
     }, []);
 
-
-
     return (
         <>
-            <h1>ok</h1>
-            {article.map(a => <li > {a.title} <br/> <p dangerouslySetInnerHTML={{ __html: a.content }} />
-            </li >)}
+            <label for="site-search">Search the site:</label>
+            <input type="search" id="site-search" name="searchbar"/>
+            <button>Search</button>
+            {article.map(a => <li > {a.title} <br/> <p dangerouslySetInnerHTML={{ __html: a.content }} /> </li >)}        
         </>
-    );
+        );
 }
 
-export default Articles;
+export default Search;
