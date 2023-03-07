@@ -11,7 +11,7 @@ function App() {
       </nav>
 
       <Routes>
-        <Route exact={true} path="/home" element={<Home/>} />
+        <Route exact={true} path="" element={<Home/>} />
         <Route path="*" element={() => <p>Page Not Found</p>} />
       </Routes>
     </>
