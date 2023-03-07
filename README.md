@@ -25,11 +25,11 @@ npm install
 ## Start the app
 Clone the repository on your computer and follow those commands : 
 ```g
-  cd server | php artisan serve 
+  cd server ; php artisan serve 
 ```
 On another teminal : 
 ```
-  cd ../client | npm start
+  cd ../client ; npm start
 ```
 
 
