@@ -9,15 +9,24 @@ function Home() {
 
     return (
         <>
-            <h1> hi </h1>
-            <Splide aria-label="My Favorite Images">
+            <Splide
+                options={{
+                    type: 'loop',
+                    rewind: true,
+                    gap: '1rem',
+                }}
+                aria-label="Some news">
+
                 <SplideSlide>
-                    <img className="logo" src={logo} alt="Logo" />
+                    <img className="img" src={logo} alt="Logo" />
                 </SplideSlide>
                 <SplideSlide>
-                    <img className="logo" src={logo1} alt="Logo" />
+                    <img className="img" src={logo1} alt="Logo" />
                 </SplideSlide>
             </Splide>
+
+            <h1> hi </h1>
+
         </>
     );
 }
