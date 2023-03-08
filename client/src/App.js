@@ -27,6 +27,7 @@ function App() {
       <Routes>
         <Route exact={true} path="/" element={<Home/>} />
         <Route exact={true} path="/articles" element={<Articles />} />
+        <Route exact={true} path="/articles/:id" element={<Articles />} />
         <Route exact={true} path="/search" element={<Search />} />
         <Route exact={true} path="/login" element={<Login />} />
         <Route exact={true} path="/register" element={<Register />} />
