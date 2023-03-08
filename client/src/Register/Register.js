@@ -14,7 +14,7 @@ function Register() {
                 <input type="password" name="password" id="password" required></input>
             </div>
             <div class="form-div">
-                <input type="submit" value="Login"></input>
+                <input type="submit" value="Register"></input>
             </div>
             <div class="form-div">
             <Link to="/login"><input type="button" value="Don't have an account ?"></input></Link>

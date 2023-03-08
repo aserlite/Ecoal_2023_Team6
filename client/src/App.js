@@ -7,7 +7,7 @@ import logo from './logo.jpeg';
 import Search from "./Search/Search";
 import Login from "./Login/Login"
 import Register from "./Register/Register";
-
+import Add from "./Add/Add";
 
 function App() {
 
@@ -30,6 +30,8 @@ function App() {
         <Route exact={true} path="/search" element={<Search />} />
         <Route exact={true} path="/login" element={<Login />} />
         <Route exact={true} path="/register" element={<Register />} />
+        <Route exact={true} path="/add" element={<Add />} />
+
 
         <Route path="*" element={() => <p>Page Not Found</p>} />
       </Routes>
