@@ -46,6 +46,16 @@ class Controller extends BaseController
         return($response);
     }
 
+    public function byTitle($slug)
+    {
+        $articles = Article::select('articles.id')->where('title', 'LIKE', '%'.$slug.'%')->get();
+        $response = [];
+        foreach ($articles as $a){
+            $response[]=$this->singlearticle($a->id);
+        }
+        return($response);
+    }
+
     public function addarticle(Request $request){
 
         $validatedData = $request->validate([

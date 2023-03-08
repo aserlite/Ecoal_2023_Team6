@@ -38,4 +38,5 @@ Route::group([
 Route::post('/single/{id}',[Controller::class,'singlearticle']);
 Route::post('/allarticle',[Controller::class,'allarticle']);
 Route::post('/bytag/{slug}',[Controller::class,'bytags']);
+Route::post('/byTitle/{slug}',[Controller::class,'byTitle']);
 
