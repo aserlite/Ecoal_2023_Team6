@@ -13,10 +13,12 @@ function Add() {
                 <textarea name="content" id="content" required></textarea>
             </div>
             <div class="form-div">
+                <label for="image">Image:</label>
+                <input type="file" name="image" id="image" alt='thumbnail'></input>
+            </div>
+            <div class="form-div">
                 <input type="submit" value="Send article"></input>
             </div>
-            
-            
 
         </form>
     );
