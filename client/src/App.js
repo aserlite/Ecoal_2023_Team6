@@ -3,7 +3,7 @@ import './App.css';
 import Home from "./Home/Home";
 import Articles from "./Articles/Articles";
 import Slidebar from "./Slidebar/Slidebar";
-import logo from './logo.jpeg'; 
+import logo from './logoW.png';
 import Search from "./Search/Search";
 import Login from "./Login/Login"
 import Register from "./Register/Register";
