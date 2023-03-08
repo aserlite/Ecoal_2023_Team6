@@ -4,7 +4,10 @@
 
 .bx{
     color: white;
-    
+    background-color: red;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
 }
 
 .menu-item{

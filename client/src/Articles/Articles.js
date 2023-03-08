@@ -24,7 +24,7 @@ function Articles() {
     return (
         <>
             <div className="allArticles">
-                {article.map(a =>   <li > <h2> {a.title} </h2> <br/> <p dangerouslySetInnerHTML={{ __html: a.content }} />
+                {article.map(a => <li> <h2> {a.title} </h2> <br/> <p dangerouslySetInnerHTML={{ __html: a.content }} />
                 </li >)}
             </div>
         </>

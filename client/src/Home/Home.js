@@ -1,7 +1,5 @@
 import "./Home.css"
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import logo from '../logo.svg';
-import logo1 from '../logo.jpeg';
 import '@splidejs/react-splide/css';
 import axios from "axios";
 import {useEffect, useState} from "react";

@@ -1,15 +1,10 @@
-import './Login.css'
+import './Register.css'
 import { Link } from "react-router-dom"
 
-
-function Login() {
+function Register() {
 
     return (
         <form action="" method="get" class="form">
-            <div class="form-div">
-                <label for="name">Name: </label>
-                <input type="text" name="name" id="name" required></input>
-            </div>
             <div class="form-div">
                 <label for="email">Email: </label>
                 <input type="email" name="email" id="email" required></input>
@@ -22,12 +17,10 @@ function Login() {
                 <input type="submit" value="Login"></input>
             </div>
             <div class="form-div">
-            <Link to="/register"><input type="button" value="Already have an account ?"></input></Link>
+            <Link to="/login"><input type="button" value="Don't have an account ?"></input></Link>
             </div>
-            
-
         </form>
     );
 }
 
-export default Login;
+export default Register;
