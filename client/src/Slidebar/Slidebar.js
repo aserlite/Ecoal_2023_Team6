@@ -7,12 +7,14 @@ function Slidebar() {
 
     return (
         <>
+            <div className="outer_container">
             <Menu right>
                 <Link to="/search" id="search"><a className="menu-item" href="/"> Search <i className='bx bx-search' style={{color: "red"}}></i></a></Link>
                 <Link to ="/home"><a id="home" className="menu-item" href="/home">Home</a></Link>
                 <Link to="/articles" id="about"><a className="menu-item" href="/articles">Articles</a></Link>
                 <Link to="/contact"><a id="contact" className="menu-item" href="/contact">Contact</a></Link>
             </Menu>
+            </div>
         </>
     );
 }
