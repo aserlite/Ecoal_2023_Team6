@@ -15,8 +15,8 @@ function App() {
   return (
     <>
 
-      <Slidebar/>
-        
+        <Slidebar/>
+
       <nav>
         <Link to="/" className='home'><img className="logo" src={logo} alt="Logo" /></Link>
         <Link to="/login" className='home'><i class='bx bx-user'></i></Link>
