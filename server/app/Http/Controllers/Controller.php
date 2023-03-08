@@ -48,8 +48,6 @@ class Controller extends BaseController
 
     public function addarticle(Request $request){
 
-
-
         $validatedData = $request->validate([
             'title' => 'required|string',
             'content' => 'required|string',
