@@ -28,7 +28,7 @@ function Article() {
     return (
         <>
             <div className="article">
-                <p dangerouslySetInnerHTML={{ __html: article.title }}/>
+                <h2>{article.title}</h2><p dangerouslySetInnerHTML={{ __html: article.content }}/>
             </div>
         </>
     );
