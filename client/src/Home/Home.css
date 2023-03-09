@@ -1,4 +1,67 @@
+
 .img{
-    max-width: 25rem;
+    max-width: 100%;
+  }
+.img1{
+  max-width: 100%;
+ 
+}
+h2{
+  text-align: center;
+}
+.testButton{
+
+  padding-bottom: 10%;
+}
+  .LatestPost{
+    background-color: rgb(216, 209, 209);
+    margin: auto;
+    width: 60%;
+    border: 3px solid #230a3a;
+    padding: 10px;
+    
+  }
+  button{
+    
+    color: black;
+    background-color: orange;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    max-width: 100%;
+    display:block;
+  }
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
+  .circle, .circle::before {
+    content: " ";
+    margin: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 auto;
+    transition: all 0.3s;
+    background-color: #FF0055;
+  }
+  
+  .circle::before {
+    animation: mymove 2s infinite;
+    position: absolute;
+    background-color: #00FF00
+  }
+  
+  @-webkit-keyframes mymove {
+    50%   {
+      transform: scale(2);
+      opacity: 0
+    }
+    100%   {
+      transform: scale(2);
+      opacity: 0
+    }
+  }

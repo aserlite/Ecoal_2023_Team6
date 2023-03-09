@@ -19,6 +19,9 @@ function Search() {
         console.log(article)
     }
 
+
+
+
     const [choice, updateChoice] = useState('title')
 
     function tagChoice() {
@@ -30,7 +33,7 @@ function Search() {
     }
 
 
-    let test = article.map(a => a.tags)
+    let test = article.map(a =>a.tags)
     console.log(test[0])
 
     return (
@@ -43,13 +46,13 @@ function Search() {
             </div>
 
             {choice == "title" ?
-                <> <label for="site-search">Search Articles:</label>
-                     <div class="row"></div><input type="search" id="site-search" name="searchbar" value={search} onChange={(e) => setSearch(e.target.value)} />
+                <> <label for="site-search">Search the site:</label>
+                    <input type="search" id="site-search" name="searchbar" value={search} onChange={(e) => setSearch(e.target.value)} />
                     <button>Search</button> </>
                 :
-                <> <label for="music-select">Type of Music:</label>
+                <> <label for="music-select">Type of music:</label>
                     <select name="music" id="music-select">
-                        <option value=""> Please choose a music genre </option>
+                        <option value=""> Please choose a music </option>
                         <option value="jazz">Jazz</option>
                         <option value="pop">Pop</option>
                         <option value="rock">Rock</option>
@@ -58,7 +61,7 @@ function Search() {
                 </>}
 
 
-            {article.map(a => <li > <Link to={'/article/' + a.id}> <h2> {a.title} </h2> <br /> <p dangerouslySetInnerHTML={{ __html: a.content }} /> </Link> </li >)}
+            {article.map(a => <li > <Link to={'/article/' + a.id}> <h2> {a.title} </h2> <br/> <p dangerouslySetInnerHTML={{ __html: a.content }} /> </Link> </li >)}
 
         </>
     );
