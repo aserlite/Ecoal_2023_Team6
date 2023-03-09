@@ -8,8 +8,6 @@ import Search from "./Search/Search";
 import Login from "./Login/Login"
 import Register from "./Register/Register";
 import Add from "./Add/Add";
-import { FaBeer } from 'react-icons/fa';
-
 
 function App() {
 

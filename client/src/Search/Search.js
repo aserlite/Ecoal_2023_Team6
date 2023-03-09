@@ -5,14 +5,12 @@ import axios from "axios";
 function Search() {
     const [search,setSearch]=useState("")
     const [article, setArticle] = useState([])
-
     useEffect(() => {
         (async()=>await searchArticle())()
     }, [search]);
 
     async function searchArticle(){
         const article = (await axios.post('http://localhost:8000/api/byTitle/'+search)).data
-        console.log("==",article)
         setArticle(article)
     }
     return (
