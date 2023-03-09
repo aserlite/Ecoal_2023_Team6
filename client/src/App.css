@@ -4,25 +4,11 @@
 
   /* mobile styles first */
   .logo {
-    width: 25%;
+    max-width: 6rem;
   }
 
-  /* tablet styles */
-  @media screen and (min-width: 768px) {
-    .logo {
-      width: 25%;
-    }
-  }
-
-  /* desktop styles */
-  @media screen and (min-width: 1024px) {
-    .logo {
-      max-width: 5rem;
-    }
-
-    .home {
-      padding: 2rem;
-      text-decoration: none;
-      color: white;
-    }
+  .home {
+    padding: 2rem;
+    text-decoration: none;
+    color: white;
   }

@@ -20,16 +20,13 @@ button {
 }
 
 .column1 {
-
-    margin-right: 25px;
+    margin-right: 5px;
     margin-left: auto;
-
 }
 
 .column2 {
     margin-right: auto;
-    margin-left: 25px;
-
+    margin-left: 5px;
 }
 
 .row {
@@ -72,11 +69,25 @@ label[for="music-select"] {
     text-align: center;
     max-width: 100%;
     display: block;
-
     font: 1.25rem / 1.5 sans-serif;
     display: block;
     box-sizing: border-box;
     width: 80%;
     padding: 0.5rem 0.75rem;
     height: 30px;
+}
+
+
+#music-select {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    max-width: 100%;
+    display: block;
+    font: 1.25rem / 1.5 sans-serif;
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 0.5rem 0.75rem;
+    height: 100%;
 }
