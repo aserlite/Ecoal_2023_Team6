@@ -19,7 +19,7 @@ function Register(props) {
             alert('Error');
         }else{
             console.log(response.token);
-            setcookie('td05',{name: response.name, token: response.token},"/");
+            props.setCookie('td05',{name: response.name, token: response.token},"/");
         }
 
 
@@ -39,7 +39,7 @@ function Register(props) {
                 <input type="password" name="password" id="password" required onChange={e => handleChange(e, "password")}></input>
             </div>
             <div className="form-div">
-                <input type="submit" value="Login" ></input>
+                <input type="submit" value="Register" ></input>
             </div>
             <div className="form-div">
                 <Link to="/login"><input type="button" value="Already have an account ?"></input></Link>

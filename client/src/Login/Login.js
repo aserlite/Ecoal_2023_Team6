@@ -11,10 +11,6 @@ function Login() {
     return (
         <form action="" method="get" className="form">
             <div className="form-div">
-                <label for="name">Name: </label>
-                <input type="text" name="name" id="name" required></input>
-            </div>
-            <div className="form-div">
                 <label for="email">Email: </label>
                 <input type="email" name="email" id="email" required></input>
             </div>
