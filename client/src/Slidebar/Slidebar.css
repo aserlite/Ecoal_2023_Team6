@@ -1,4 +1,18 @@
-#search{
+@import url("https://use.typekit.net/swa0fjs.css");
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+   
+}
+
+#search {
     padding-top: 5rem;
 }
 
@@ -8,19 +22,21 @@
     display: flex;
 }
 
-.menu-item{
+.menu-item {
     text-decoration: none;
+    font-style: normal;
     color: white;
+
 }
 
-.menu-item:link { 
-    text-decoration: none; 
+.menu-item:link {
+    text-decoration: none;
 }
 
 .bm-burger-button {
     position: fixed;
-    width: 36px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     right: 36px;
     top: 36px;
 }
@@ -37,6 +53,7 @@
 .bm-cross {
     background: #bdc3c7;
 }
+
 .bm-menu-wrap {
     position: fixed;
     height: 100%;
