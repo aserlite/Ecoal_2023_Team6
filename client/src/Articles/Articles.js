@@ -28,7 +28,7 @@ function Articles(props) {
     return (
         <>
             <div className="allArticles">
-                {articles.map(a => <li > <Link to={'/article/'+id}> <h2> {a.title}</h2><br /><p dangerouslySetInnerHTML={{ __html: a.content }} /> </Link> </li >)}
+                {articles.map(a => <li > <Link to={'/article/'+a.id}> <h2> {a.title}</h2><br /><p dangerouslySetInnerHTML={{ __html: a.content }} /> </Link> </li >)}
             </div>
         </>
     );

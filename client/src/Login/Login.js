@@ -1,5 +1,9 @@
 import './Login.css'
-import { Link } from "react-router-dom"
+import {Link} from "react-router-dom"
+import {useState} from "react";
+import {useCookies} from "react-cookie";
+import axios from "axios";
+
 
 
 function Login() {
@@ -19,7 +23,7 @@ function Login() {
                 <input type="password" name="password" id="password" required></input>
             </div>
             <div className="form-div">
-                <input type="submit" value="Login"></input>
+                <input type="submit" value="Login" ></input>
             </div>
             <div className="form-div">
             <Link to="/register"><input type="button" value="Already have an account ?"></input></Link>
