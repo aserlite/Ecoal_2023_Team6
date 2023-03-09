@@ -61,7 +61,6 @@ class Controller extends BaseController
         $validatedData = $request->validate([
             'title' => 'required|string',
             'content' => 'required|string',
-            'mediaType' => 'required|string',
         ]);
 
         $article = Article::create([
@@ -69,7 +68,7 @@ class Controller extends BaseController
             'title' => $validatedData['title'],
             'content' => $validatedData['content'],
             'thumbnailURL'=> "/",
-            'mediaType' => $validatedData['mediaType'],
+            'mediaType' => "image",
             'mediaURL'=> "/",
             'leadStory' => 0,
             'created_at' => date('Y-m-d H:i:s'),
