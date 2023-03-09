@@ -19,6 +19,9 @@ function Search() {
         console.log(article)
     }
 
+
+
+
     const [choice, updateChoice] = useState('title')
 
     function tagChoice() {
@@ -30,9 +33,28 @@ function Search() {
     }
 
 
-    let test = article.map(a =>a.tags)
-    console.log(test[0])
 
+
+
+
+
+    const [value, setValue] = useState("react")
+    const [articletag, setArticleTag] = useState([])
+
+    useEffect(() => {
+        (async () => await filterTag())()
+    }, [value]);
+
+    async function filterTag(tag) {
+        const articletag = (await axios.post('http://localhost:8000/api/bytag/' + tag)).data
+        setArticleTag(articletag)
+        console.log(articletag)
+        console.log(tag)
+    }    
+    
+    function handleChange(e,label){
+        filterTag(e.target.value);
+    }
     return (
         <>
             <h1>Search by</h1>
@@ -43,21 +65,21 @@ function Search() {
             {choice == "title" ?
                 <> <label for="site-search">Search the site:</label>
                     <input type="search" id="site-search" name="searchbar" value={search} onChange={(e) => setSearch(e.target.value)} />
-                    <button>Search</button> </>
+                    <button>Search</button>
+                    {article.map(a => <li > <Link to={'/article/' + a.id}> <h2> {a.title} </h2>
+                        <br /> <p dangerouslySetInnerHTML={{ __html: a.content }} /> </Link> </li >)} </>
                 :
                 <> <label for="music-select">Type of music:</label>
-                    <select name="music" id="music-select">
+                    <select name="music" id="music-select" onChange={handleChange}>
                         <option value=""> Please choose a music </option>
-                        <option value="jazz">Jazz</option>
+                        <option value="react">Jazz</option>
                         <option value="pop">Pop</option>
                         <option value="rock">Rock</option>
                         <option value="rap">Rap</option>
                     </select>
-                </>}
-
-
-            {article.map(a => <li > <Link to={'/article/' + a.id}> <h2> {a.title} </h2> <br/> <p dangerouslySetInnerHTML={{ __html: a.content }} /> </Link> </li >)}
-
+                    {articletag.map(a => <li > <Link to={'/article/' + a.id}> <h2> {a.title} </h2>
+                        <br /> <p dangerouslySetInnerHTML={{ __html: a.content }} /> </Link> </li >)}
+                     </>}
         </>
     );
 }
