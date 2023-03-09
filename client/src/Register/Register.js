@@ -25,9 +25,8 @@ function Register(props) {
             navigate("/");
 
         }
-
-
     }
+
     return (
         <form className="form" onSubmit={handleSubmit}>
             <div className="form-div">
