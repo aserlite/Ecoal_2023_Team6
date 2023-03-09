@@ -23,7 +23,6 @@ function Register(props) {
             console.log(response.token);
             props.setCookie('td05',{name: response.name, token: response.token},"/");
             navigate("/");
-
         }
     }
 
