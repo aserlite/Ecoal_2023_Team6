@@ -14,9 +14,10 @@ function Add(props) {
     async function handleSubmit(e){
         e.preventDefault()
         console.log(article)
+        console.log(props.cookies)
         const response = (await axios.request({
             url: require.resolve("http://localhost:8000/api/addarticle"),
-            headers: {Authorization: "Bearer"+props.cookies.td05.access_token}
+            headers: {Authorization: "Bearer "+props.cookies.td05.access_token}
         },article)).data;
         console.log(response)
     }

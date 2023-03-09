@@ -32,7 +32,7 @@ function App() {
         <Route exact={true} path="/search" element={<Search />} />
         <Route exact={true} path="/login" element={<Login setCookie={setCookie}/>} />
         <Route exact={true} path="/register" element={<Register setCookie={setCookie} />} />
-        <Route exact={true} path="/add" element={<Add />} />
+        <Route exact={true} path="/add" element={<Add cookies={cookies} />} />
 
         <Route path="*" element={() => <p>Page Not Found</p>} />
       </Routes>
