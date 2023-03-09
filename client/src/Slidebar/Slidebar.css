@@ -11,9 +11,15 @@ a:hover {
 a:active {
    
 }
+.icons_bar{
+    display: flex !important;
+    flex-direction: column;
+    gap:2.5rem;
+    margin-top:.8em;
+}
 
-#search {
-    padding-top: 5rem;
+.bm-item{
+    padding-top:.5rem;
 }
 
 .bx{
@@ -65,7 +71,7 @@ a:active {
 
 .bm-item-list {
     color: #b8b7ad;
-    padding: 0.8em;
+    padding: 0 .8em 0 .8em;
 }
 
 .bm-item {
@@ -75,4 +81,8 @@ a:active {
 .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
     opacity: 0.5;
+}
+
+.login_menu_item svg{
+    transform: scale(125%);
 }
