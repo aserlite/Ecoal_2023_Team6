@@ -32,7 +32,7 @@ Route::group([
                                 return $request->user();
                          });
 
-    Route::get('/addarticle',[Controller::class,'addarticle'])->middleware('admin');
+    Route::post('/addarticle',[Controller::class,'addarticle'])->middleware('admin');
 });
 
 Route::post('/single/{id}',[Controller::class,'singlearticle']);
