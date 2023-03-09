@@ -85,3 +85,8 @@ button {
     opacity: 0
   }
 }
+
+.splide__pagination,
+.splide__pagination--ltr {
+  display: none;
+}
