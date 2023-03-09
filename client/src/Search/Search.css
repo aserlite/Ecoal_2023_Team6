@@ -1,0 +1,82 @@
+@import url("https://use.typekit.net/swa0fjs.css");
+
+h1 {
+    text-align: center;
+}
+
+button {
+    display: block;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    height: 40px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-color: #f0ba65;
+    color: rgba(0, 0, 0, 0.9);
+    border: none;
+    font-weight: bolder;
+}
+
+.column1 {
+
+    margin-right: 25px;
+    margin-left: auto;
+
+}
+
+.column2 {
+    margin-right: auto;
+    margin-left: 25px;
+
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    clear: both;
+    margin: 0 auto;
+    display: table;
+}
+
+label[for="site-search"],
+label[for="music-select"] {
+    text-align: center;
+    font-size: 18px;
+}
+
+.select{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    max-width: 100%;
+    display: block;
+
+    font: 1.25rem / 1.5 sans-serif;
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 0.5rem 0.75rem;
+    height: 30px;
+}
+
+#site-search {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    max-width: 100%;
+    display: block;
+
+    font: 1.25rem / 1.5 sans-serif;
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 0.5rem 0.75rem;
+    height: 30px;
+}

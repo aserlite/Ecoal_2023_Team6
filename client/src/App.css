@@ -1,13 +1,28 @@
-  nav{
-  background-color: black;
-}
- 
-.logo{
-  width: 25%;
-}
+  nav {
+    background-color: black;
+  }
 
-.home{
-  padding: 2rem;
-  text-decoration: none;
-  color: white;
-}
+  /* mobile styles first */
+  .logo {
+    width: 25%;
+  }
+
+  /* tablet styles */
+  @media screen and (min-width: 768px) {
+    .logo {
+      width: 25%;
+    }
+  }
+
+  /* desktop styles */
+  @media screen and (min-width: 1024px) {
+    .logo {
+      max-width: 5rem;
+    }
+
+    .home {
+      padding: 2rem;
+      text-decoration: none;
+      color: white;
+    }
+  }
