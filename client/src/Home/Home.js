@@ -69,16 +69,14 @@ function Home() {
 
                                 <img className="img1" src={"http://localhost:8000" + a.thumbnailURL} alt="Logo" />
                                 <h3>Billboard top song</h3>
-                                <p>Hola Bonco, humpty dumpty hunky doryzjhvkjsdfvjndsfjvnfdvndfzljkfv
-                                    hzduhfvbgzudfhjvbxdfhyvbzdfuyvhzkudsfhvbzdvbzjhufdvb</p>
+                                <p>Hola Bonco, humpty dumpty hunky dory</p>
 
                             </SplideSlide>)}
                         {article.map(a =>
                             <SplideSlide>
                                 <img className="img1" src={"http://localhost:8000" + a.thumbnailURL} alt="Logo" />
                                 <h3>Billboard top song1</h3>
-                                <p>Hola Bonco, humpty dumpty hunky doryzjhvkjsdfvjndsfjvnfdvndfzljkfvhzd
-                                    uhfvbgzudfhjvbxdfhyvbzdfuyvhzkudsfhvbzdvbzjhufdvb</p>
+                                <p>Hola Bonco, humpty dumpty hunky dory</p>
 
                             </SplideSlide>)}
 
