@@ -3,8 +3,6 @@
 }
 
 .bx{
-    color: white;
-    background-color: red;
     height: 2rem;
     width: 2rem;
     display: flex;
@@ -59,4 +57,5 @@
 
 .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
+    opacity: 0.5;
 }

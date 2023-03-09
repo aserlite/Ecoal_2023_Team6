@@ -1,31 +1,28 @@
 import './Articles.css'
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom"
+
 
 
 function Articles() {
 
-
-    const [article, setArticle] = useState([])
-
+    const [articles, setArticles] = useState([])
 
     async function getArticles() {
-        const article = (await axios.post('http://localhost:8000/api/allarticle')).data
-        setArticle(article)
-        console.log(article)
+        const articles = (await axios.post('http://localhost:8000/api/allarticle')).data
+        setArticles(articles)
+        console.log(articles)
     }
 
     useEffect(() => {
         getArticles()
     }, []);
 
-
-
     return (
         <>
             <div className="allArticles">
-                {article.map(a => <li> <h2> {a.title} </h2> <br/> <p dangerouslySetInnerHTML={{ __html: a.content }} />
-                </li >)}
+                <Link to='/article/:id'>{articles.map(a => <li> <h2> {a.title}</h2><br/><p dangerouslySetInnerHTML={{ __html: a.content }}/></li >)}</Link>
             </div>
         </>
     );
