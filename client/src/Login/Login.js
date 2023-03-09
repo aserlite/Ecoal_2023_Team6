@@ -9,7 +9,7 @@ import axios from "axios";
 function Login() {
 
     return (
-        <form action="" method="get" className="form">
+        <form className="form">
             <div className="form-div">
                 <label for="email">Email: </label>
                 <input type="email" name="email" id="email" required></input>
