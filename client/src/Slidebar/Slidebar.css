@@ -16,9 +16,7 @@ a:active {
     padding-top: 5rem;
 }
 
-.bx {
-    color: white;
-    background-color: red;
+.bx{
     height: 2rem;
     width: 2rem;
     display: flex;
@@ -76,4 +74,5 @@ a:active {
 
 .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
+    opacity: 0.5;
 }

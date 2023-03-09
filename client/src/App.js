@@ -8,13 +8,13 @@ import Search from "./Search/Search";
 import Login from "./Login/Login"
 import Register from "./Register/Register";
 import Add from "./Add/Add";
+import Article from "./Article/Article";
 
 function App() {
 
 
   return (
     <>
-
         <Slidebar/>
 
       <nav>
@@ -23,16 +23,14 @@ function App() {
       </nav>
 
 
-
       <Routes>
         <Route exact={true} path="/" element={<Home/>} />
         <Route exact={true} path="/articles" element={<Articles />} />
-        <Route exact={true} path="/articles/:id" element={<Articles />} />
+        <Route exact={true} path="/article" element={<Article />} />
         <Route exact={true} path="/search" element={<Search />} />
         <Route exact={true} path="/login" element={<Login />} />
         <Route exact={true} path="/register" element={<Register />} />
         <Route exact={true} path="/add" element={<Add />} />
-
 
         <Route path="*" element={() => <p>Page Not Found</p>} />
       </Routes>
