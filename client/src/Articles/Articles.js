@@ -9,7 +9,6 @@ function Articles(props) {
 
     let params = useParams()
     let id = params.id;
-    console.log(id)
 
     const [articles, setArticles] = useState([])
 

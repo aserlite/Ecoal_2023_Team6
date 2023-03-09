@@ -29,14 +29,72 @@ function Home() {
                         aria-label="Some news">
                         {article.map(a =>
                             <SplideSlide>
+                         <h3>Billboard top song</h3>
                             <img className="img" src={"http://localhost:8000"+ a.thumbnailURL} alt="Logo" />
-                        </SplideSlide>)}
+                           
+                            <p>Hola Bonco, humpty dumpty hunky dory</p>
+                            <div className="testButton"> 
+                            <button type="button" >Read More</button>
+                            </div>
+                            </SplideSlide>)}
+                           
+                            {article.map(a =>   
+                            <SplideSlide>
+                                <h3>Billboard song 2 </h3>
+                            <img className="img" src={"http://localhost:8000"+ a.thumbnailURL} alt="Logo" />
+                            <p>Hola Bonco, humpty dumpty hunky dory cracker tork</p>
+                            
+                            <div className="testButton"> 
+                            <button type="button" >Read More</button>
+                            </div>
+                            </SplideSlide>)}
+                        
+                    </Splide>
+                    </div>
+
+
+
+                    <section class="container">
+    <div class="circle"></div>
+</section>
+
+                    <h2>Latest Posts</h2>
+
+                    
+                    <div className="LatestPost">
+                    <Splide
+                        options={{
+                            type: 'loop',
+                            rewind: true,
+                            gap: '1rem',
+                             
+                        }}
+                        aria-label="Some news">
+                        {article.map(a =>
+                            <SplideSlide>
+                                
+                            <img className="img1" src={"http://localhost:8000"+ a.thumbnailURL} alt="Logo" />
+                            <h3>Billboard top song</h3>
+                            <p>Hola Bonco, humpty dumpty hunky doryzjhvkjsdfvjndsfjvnfdvndfzljkfv
+                                hzduhfvbgzudfhjvbxdfhyvbzdfuyvhzkudsfhvbzdvbzjhufdvb</p>
+                           
+                            </SplideSlide>)}
+                            {article.map(a =>   
+                            <SplideSlide>
+                            <img className="img1" src={"http://localhost:8000"+ a.thumbnailURL} alt="Logo" />
+                            <h3>Billboard top song1</h3>
+                            <p>Hola Bonco, humpty dumpty hunky doryzjhvkjsdfvjndsfjvnfdvndfzljkfvhzd
+                                uhfvbgzudfhjvbxdfhyvbzdfuyvhzkudsfhvbzdvbzjhufdvb</p>
+                           
+                            </SplideSlide>)}
+                        
                     </Splide>
                 </div>
+
+                
             </div>
         </>
     );
 }
-
 
 export default Home;

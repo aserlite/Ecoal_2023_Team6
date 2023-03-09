@@ -42,7 +42,7 @@ function Login(props) {
                 <input type="submit" value="Login" ></input>
             </div>
             <div className="form-div">
-            <Link to="/register"><input type="button" value="Already have an account ?"></input></Link>
+            <Link to="/register"><input type="button" value="Don't have an account ?"></input></Link>
             </div>
             
 

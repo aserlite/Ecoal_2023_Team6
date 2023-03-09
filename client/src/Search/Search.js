@@ -19,6 +19,9 @@ function Search() {
         console.log(article)
     }
 
+
+
+
     const [choice, updateChoice] = useState('title')
 
     function tagChoice() {
@@ -35,10 +38,12 @@ function Search() {
 
     return (
         <>
-            <h1>Search by</h1>
-            <button onClick={resetChoice}> Title </button>
-            <button onClick={tagChoice}> Tags </button>
+            <h1>Search by:</h1>
+            <div class="row">
+                <div class="column1"><button onClick={resetChoice}> Title </button></div>
 
+                <div class="column2"> <button onClick={tagChoice}> Tags </button></div>
+            </div>
 
             {choice == "title" ?
                 <> <label for="site-search">Search the site:</label>
