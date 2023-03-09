@@ -2,8 +2,10 @@ import './Register.css'
 import { Link } from "react-router-dom"
 import {useState} from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function Register(props) {
+    const navigate = useNavigate();
 
     const [person,setPerson]=useState("");
     function handleChange(e, label){
@@ -20,10 +22,11 @@ function Register(props) {
         }else{
             console.log(response.token);
             props.setCookie('td05',{name: response.name, token: response.token},"/");
+            navigate("/");
+
         }
-
-
     }
+
     return (
         <form className="form" onSubmit={handleSubmit}>
             <div className="form-div">
