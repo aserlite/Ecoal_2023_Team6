@@ -56,7 +56,7 @@ function Search() {
                 </>}
 
 
-            {article.map(a => <li > <Link to={'/article/' + a.id}> <h2> {a.title} {test} </h2> <br/> <p dangerouslySetInnerHTML={{ __html: a.content }} /> </Link> </li >)}
+            {article.map(a => <li > <Link to={'/article/' + a.id}> <h2> {a.title} </h2> <br/> <p dangerouslySetInnerHTML={{ __html: a.content }} /> </Link> </li >)}
 
         </>
     );
