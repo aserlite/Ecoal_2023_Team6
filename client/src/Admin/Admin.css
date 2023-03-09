@@ -13,8 +13,8 @@
 .adminPanel a{
     color:black;
     padding:1.5rem;
-    box-shadow: 10px 10px 0 #1a202c ;
-    border:2.5px black solid;
+    box-shadow: 10px 10px 0 #f0ba65 ;
+    border:2.5px #f0ba65 solid;
     transition:.5s;
 }
 

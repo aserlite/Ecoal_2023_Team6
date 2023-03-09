@@ -55,7 +55,10 @@ class Controller extends BaseController
         }
         return($response);
     }
-
+    public function deleteArticle($id){
+        $article = Article::find($id);
+        $article->delete();
+    }
     public function addarticle(Request $request){
         $validatedData = $request->validate([
             'title' => 'required|string',

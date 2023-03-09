@@ -9,18 +9,15 @@ function Register(props) {
 
     const [person,setPerson]=useState("");
     function handleChange(e, label){
-        console.log(e.target.value)
         setPerson({...person,[label]: e.target.value })
 
     }
     async function handleSubmit(e){
         e.preventDefault()
-        console.log(person)
         const response = (await axios.post("http://localhost:8000/api/register",person)).data;
         if (response.access_token === undefined){
             alert('Error');
         }else{
-            console.log(response.token);
             props.setCookie('td05',{name: response.name, token: response.token},"/");
             navigate("/");
         }
