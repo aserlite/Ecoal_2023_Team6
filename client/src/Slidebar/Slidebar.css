@@ -8,9 +8,6 @@ a:hover {
     text-decoration: underline;
 }
 
-a:active {
-   
-}
 .icons_bar{
     display: flex !important;
     flex-direction: column;
@@ -52,8 +49,8 @@ a:active {
 }
 
 .bm-cross-button {
-    height: 24px;
-    width: 24px;
+    height: 25px;
+    width: 25px;
 }
 
 .bm-cross {
