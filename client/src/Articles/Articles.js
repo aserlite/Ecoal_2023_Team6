@@ -2,10 +2,14 @@ import './Articles.css'
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom"
+import { useParams } from 'react-router-dom'
 
 
+function Articles(props) {
 
-function Articles() {
+    let params = useParams()
+    let id = params.id;
+    console.log(id)
 
     const [articles, setArticles] = useState([])
 
@@ -19,10 +23,12 @@ function Articles() {
         getArticles()
     }, []);
 
+
+
     return (
         <>
             <div className="allArticles">
-                <Link to='/article/:id'>{articles.map(a => <li> <h2> {a.title}</h2><br/><p dangerouslySetInnerHTML={{ __html: a.content }}/></li >)}</Link>
+                {articles.map(a => <li > <Link to={'/article/'+id}> <h2> {a.title}</h2><br /><p dangerouslySetInnerHTML={{ __html: a.content }} /> </Link> </li >)}
             </div>
         </>
     );

@@ -5,11 +5,12 @@ import { useParams } from 'react-router-dom'
 
 
 
-function Article(props) {
+function Article() {
 
     let params = useParams()
-    console.log(params.id)
     let id = params.id;
+    console.log(id)
+
 
     const [article, setArticle] = useState([])
 
@@ -27,7 +28,7 @@ function Article(props) {
     return (
         <>
             <div className="article">
-                {article.title}<p dangerouslySetInnerHTML={{ __html: article.content }}/>
+                <p dangerouslySetInnerHTML={{ __html: article.title }}/>
             </div>
         </>
     );
