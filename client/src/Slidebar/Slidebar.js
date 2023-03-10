@@ -10,7 +10,7 @@ import { AiOutlineLogout } from "react-icons/ai";
 function Slidebar(props) {
     let loginbutton;
     if (props.cookies.td05 === undefined){
-        loginbutton  = <Link to="/logout" id="logout"><a className="menu-item login_menu_item" href="/login"><AiOutlineLogout /> </a></Link>;
+        loginbutton = <Link to="/login" id="login"><a className="menu-item login_menu_item" href="/login"><AiOutlineUserAdd /> </a></Link>;
     }else{
         loginbutton = <Link to="/login" id="login"><a className="menu-item login_menu_item" href="/login"><AiOutlineUserAdd /> </a></Link>;
     }
