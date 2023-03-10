@@ -16,7 +16,6 @@ function Search() {
     async function searchArticle() {
         const article = (await axios.post('http://localhost:8000/api/byTitle/' + search)).data
         setArticle(article)
-        console.log(article)
     }
 
 
@@ -48,8 +47,6 @@ function Search() {
     async function filterTag(tag) {
         const articletag = (await axios.post('http://localhost:8000/api/bytag/' + tag)).data
         setArticleTag(articletag)
-        console.log(articletag)
-        console.log(tag)
     }
 
     function handleChange(e,label){
@@ -58,12 +55,12 @@ function Search() {
     return (
         <>
             <h1>Search by</h1>
-            <div className="buttons_bar">
-            <button onClick={resetChoice}> Title </button>
-            <button onClick={tagChoice}> Tags </button>
+            <div className="buttons_bar_search">
+                <button onClick={resetChoice}> Title </button>
+                <button onClick={tagChoice}> Tags </button>
             </div>
 
-            {choice == "title" ?
+            {choice === "title" ?
                 <> <label for="site-search">Search the site:</label>
                     <input type="search" id="site-search" name="searchbar" value={search} onChange={(e) => setSearch(e.target.value)} />
                     {article.map(a => <li className='list'> <Link to={'/article/' + a.id}> <h1 className='searchtitle'> {a.title} </h1>

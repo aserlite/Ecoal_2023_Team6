@@ -9,7 +9,6 @@ function Add(props) {
     const [tn,setTN]=useState(false);
     const [media,setMedia]=useState(false);
     function handleChange(e, label){
-        console.log(e.target.value)
         setArticle({...article,[label]: e.target.value })
     }
 
@@ -30,11 +29,10 @@ function Add(props) {
                 }
             })).data;
         navigate('/');
-        console.log(response)
     }
 
     return (
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="login-form" onSubmit={handleSubmit}>
             <div className="form-div">
                 <label for="title">Title: </label>
                 <input type="text" name="title" id="title" required onChange={e => handleChange(e, "title")}></input>

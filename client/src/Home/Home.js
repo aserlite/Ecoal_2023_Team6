@@ -9,14 +9,12 @@ import {useNavigate} from "react-router-dom";
 function Home() {
     const navigate = useNavigate();
     async function redirection (id){
-        console.log("ijziej")
         navigate("/article/"+id.target.value);
     }
     const [article, setArticle] = useState([])
     async function getArticles() {
         const article = (await axios.post('http://localhost:8000/api/allarticle')).data
         setArticle(article)
-        console.log(article)
     }
     useEffect(() => {
         getArticles()

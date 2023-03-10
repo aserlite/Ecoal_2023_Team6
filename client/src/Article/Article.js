@@ -9,7 +9,6 @@ function Article() {
 
     let params = useParams()
     let id = params.id;
-    console.log(id)
 
 
     const [article, setArticle] = useState([])
@@ -17,7 +16,6 @@ function Article() {
     async function getArticle() {
         const article = (await axios.post('http://localhost:8000/api/single/' + id)).data
         setArticle(article)
-        console.log(article)
     }
 
     useEffect(() => {

@@ -9,7 +9,6 @@ import {useNavigate} from "react-router-dom";
 function Latest() {
     const navigate = useNavigate();
     async function redirection (id){
-        console.log("ijziej")
         navigate("/article/"+id.target.value);
     }
     const [article, setArticle] = useState([])
@@ -17,7 +16,6 @@ function Latest() {
         const article = (await axios.post('http://localhost:8000/api/allarticle')).data
         setArticle(article)
         let test = article.reverse()
-        console.log(test);
     }
     useEffect(() => {
         getArticles()

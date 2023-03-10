@@ -3,18 +3,23 @@ import { slide as Menu } from 'react-burger-menu'
 import { Link } from "react-router-dom"
 import { BsSearch } from "react-icons/bs";
 import { AiOutlineUserAdd } from "react-icons/ai";
+import { AiOutlineLogout } from "react-icons/ai";
 
 
 
-function Slidebar() {
-
+function Slidebar(props) {
+    let loginbutton;
+    if (props.cookies.td05 === undefined){
+        loginbutton  = <Link to="/logout" id="logout"><a className="menu-item login_menu_item" href="/login"><AiOutlineLogout /> </a></Link>;
+    }else{
+        loginbutton = <Link to="/login" id="login"><a className="menu-item login_menu_item" href="/login"><AiOutlineUserAdd /> </a></Link>;
+    }
     return (
         <>
             <div className="outer_container">
                 <Menu right>
                     <div className="icons_bar">
-                        <Link to="/login" id="login"><a className="menu-item login_menu_item" href="/login"><AiOutlineUserAdd /> </a></Link>
-
+                        {loginbutton}
                         <Link to="/search" id="search"><a className="menu-item" href="/"> <BsSearch /></a></Link>
 
                     </div>

@@ -15,6 +15,7 @@ import Admin from "./Admin/Admin";
 import Article from "./Article/Article";
 import About from "./About/About";
 import Latest from "./Latest/Latest";
+import Logout from "./Logout/Logout";
 
 import { useCookies } from 'react-cookie';
 
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <>
-      <Slidebar />
+      <Slidebar cookies={cookies}/>
 
       <nav>
         <Link to="/" className='home'><img className="logo" src={logo} alt="Logo" /></Link>
@@ -45,7 +46,8 @@ function App() {
         <Route exact={true} path="/update/:id" element={<UpdateA cookies={cookies} />} />
         <Route exact={true} path="/delete" element={<Delete cookies={cookies} />} />
         <Route exact={true} path="/about" element={<About />} />
-        <Route exact={true} path="/latest" element={<Latest />} />
+      <Route exact={true} path="/latest" element={<Latest />} />
+      <Route exact={true} path="/logout" element={<Logout cookies={cookies} removeCookie={removeCookie}/>} />
 
         <Route path="*" element={() => <p>Page Not Found</p>} />
       </Routes>

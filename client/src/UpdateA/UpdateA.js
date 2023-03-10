@@ -6,12 +6,10 @@ import { useParams } from 'react-router-dom'
 function UpdateA(props) {
     let params = useParams()
     let id = params.id;
-    console.log(id)
     const [article, setArticle] = useState([])
     async function getArticle() {
         const article = (await axios.post('http://localhost:8000/api/single/'+id)).data
         setArticle(article)
-        console.log(article)
     }
     useEffect(() => {
         getArticle()

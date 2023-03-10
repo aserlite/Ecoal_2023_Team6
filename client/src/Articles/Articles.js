@@ -15,7 +15,6 @@ function Articles(props) {
     async function getArticles() {
         const articles = (await axios.post('http://localhost:8000/api/allarticle')).data
         setArticles(articles)
-        console.log(articles)
     }
 
     useEffect(() => {

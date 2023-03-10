@@ -9,7 +9,6 @@ button {
     box-sizing: border-box;
     padding: 0.5rem 0.75rem;
     height: 40px;
-    margin-top: 15px;
     background-color: #f0ba65;
     color: rgba(0, 0, 0, 0.9);
     border: none;
@@ -51,7 +50,6 @@ label[for="music-select"] {
     text-align: center;
     max-width: 100%;
     display: block;
-
     font: 1.25rem / 1.5 sans-serif;
     display: block;
     box-sizing: border-box;
@@ -100,12 +98,16 @@ label[for="music-select"] {
 }
 
 .list{
-    padding: 2rem 5rem;
+    padding: 1rem 5rem;
 }
 
-.buttons_bar{
+.buttons_bar_search{
     display: flex;
     align-items: center;
     justify-content: center;
     gap:2.5rem;
+}
+
+.buttons_bar_search button{
+    margin : 0 !important;
 }

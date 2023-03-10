@@ -26,7 +26,7 @@ function Login(props) {
 
     }
     return (
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form" className="login-form" onSubmit={handleSubmit}>
             <div className="form-div">
                 <label for="email">Email: </label>
                 <input type="email" name="email" id="email" required  onChange={e => handleChange(e, "email")}></input>

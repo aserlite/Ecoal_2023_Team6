@@ -24,7 +24,7 @@ function Register(props) {
     }
 
     return (
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="form" className="login-form" onSubmit={handleSubmit}>
             <div className="form-div">
                 <label for="name">Name: </label>
                 <input type="text" name="name" id="name" required onChange={e => handleChange(e, "name")}></input>

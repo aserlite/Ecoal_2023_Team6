@@ -12,3 +12,16 @@
   text-decoration: none;
   color: white;
 }
+
+#site-search{
+  max-width: 300px !important;
+}
+#music-select{
+  max-width: 300px !important;
+}
+
+.login-form{
+  max-width: 400px;
+  margin: 2.5rem auto auto;
+
+}
