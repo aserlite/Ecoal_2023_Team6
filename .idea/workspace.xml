@@ -5,43 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b10b5b9-f157-433b-9228-b66c770f2576" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/server/public/upload/41rGYql6Rt8DRECbW7ytd0lzm99sbn6YCq5P0P91.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/63zeJLx1JwPLU41YzwOG7BtkntRF3fhk0A5qzErm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/64EeldhzxAzIflpIyEqauiaGDoC75YM8vFp72T1f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/8rIPRKoIwSyJHMShR2Ge2lYtgjiSavUems5FRLeB.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/BreKxVSe3mNZ1OtLFayOpv3O7RwEugcfXeaJaR7H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/BvJ0bfBoNVrgdaHzPlCgwX0as6YKDwyY6bnL4fZ9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/CFvr8k3v2ctAlWijnCT0gK6uPrl0sgNxGV9B5Ql8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/EFD9oqJNCK7fz4Ij6iToQajIGemvXJL7HDVonRRu.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/IQZPWyofXMx93GwM4jzqTe0nQfkHoRPLu9LP7p3e.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/JJfje2czPA9IMLfd7Fo4V0nvRgqYoDGyelTgozg9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/KE5t2twKMxuOdng8cQvaKaaRnuf60D6AyoZ0ioLW.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/LdzuaXU84nrWo6K4YfTZKCmi7U9haq3FzkexAKHQ.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/PL0483HE0vUtRTq5WwBMQya6WCqVuBwbUEQJtHwv.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/QRJhfY0H1t9y7gOd7znUw8YfHvWMmty9DM3nqOab.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/XCfvpcHw6SMY10GQfvoQLHbimkxlQP89kOojOLes.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/YsetLk9R2slRLYYgvMevETW8VZKAnKyoOgksFJy8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/aSDxL2zhNzyGur5UQJHJCMTasTQeEyW2X6nFvz31.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/aSNCBSgJ0gqal8iy9NxPIUD5rnw4N0P40vvLAU9D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/bJ2u9fyeXCrZK0WRBgDHL8ZwNUdBEUIV49PWA8Jd.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/fXyD8jrCCWczlsznwHMPPzkRyEy1BVYg06P00Bem.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/kMVimPfk4bsV1A59LhhQijcS9AFRvgDKmHyFyxV4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/lGywqdRZIUQ1DIkjpUqjUpSAC2osZVg3kT4oTTYz.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/m80wWZKFEquLtxj4rxd8I96CeOgfGnjJsgha6eut.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/p2agcfAO0c51hKBCYzn5HutYQXSp2BGbnaYDAdN1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/ttBSiWTbPQekbfaJzgKdJYIZFjrFVkBjpGQP3V1f.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/utU8gEsRhbzAtq2Gq4lYyBUpYEryaVqUgb9J4H9M.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/vVyJxAtERTNwtiJwaw3z3nFKUttB5pgAb0fiEMfx.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/vlAdGewPNitXeu05K6P987EwhXyY1fXCHKCNnyKm.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/w010FQMwlGhGZ1L5b3rhIsosCOaShc2pvevz6KzG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/x5jpZfjKXizclFi3b7aKKAwCWBAw9N8b4dQ1ejZQ.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/ybyBiPzvXhAZruwEErGlC9bC9SuBPKJzlvmQDTX5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/public/upload/yfccFtuDJ44qJJWbluKl6d2Ae3QtvU6JayVr7Bkc.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/35257c5b-9456-486f-9885-2075eee36479.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/35257c5b-9456-486f-9885-2075eee36479.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Home/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Home/Home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Latest/Latest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Latest/Latest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/Slidebar/Slidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Slidebar/Slidebar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Search/Search.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Search/Search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Search/Search.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +190,7 @@
       <workItem from="1678263790224" duration="11955000" />
       <workItem from="1678349434121" duration="27431000" />
       <workItem from="1678382339938" duration="8638000" />
-      <workItem from="1678440690135" duration="5846000" />
+      <workItem from="1678440690135" duration="6928000" />
     </task>
     <servers />
   </component>

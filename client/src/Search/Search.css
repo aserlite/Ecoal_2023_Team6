@@ -10,9 +10,6 @@ button {
     padding: 0.5rem 0.75rem;
     height: 40px;
     margin-top: 15px;
-    margin-right: auto;
-    margin-left: auto;
-
     background-color: #f0ba65;
     color: rgba(0, 0, 0, 0.9);
     border: none;
@@ -92,14 +89,23 @@ label[for="music-select"] {
     height: 100%;
 }
 
-.searchtitle{
+.searchtitle {
     margin-bottom: -2rem;
 }
 
 .list a{
     color:black;
+    max-width: 60%;
+    text-align:center ;
 }
 
 .list{
-    padding: 2rem 0;
+    padding: 2rem 5rem;
+}
+
+.buttons_bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2.5rem;
 }
