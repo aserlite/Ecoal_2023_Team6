@@ -9,8 +9,8 @@ import {useNavigate} from "react-router-dom";
 function Home() {
     const navigate = useNavigate();
     async function redirection (id){
-        console.log()
-        navigate("/article/"+id);
+        console.log("ijziej")
+        navigate("/article/"+id.target.value);
     }
     const [article, setArticle] = useState([])
     async function getArticles() {
@@ -35,24 +35,8 @@ function Home() {
                         aria-label="Some news">
                         {article.map(a =>
                             <SplideSlide>
-                                <h3>Billboard top song</h3>
+                                <h3>{a.title}</h3>
                                 <img className="img" src={"http://localhost:8000" + a.thumbnailURL} alt="Logo" />
-
-                                <p>Hola Bonco, humpty dumpty hunky dory</p>
-                                <div className="testButton">
-                                    <button type="button" >Read More</button>
-                                </div>
-                            </SplideSlide>)}
-
-                        {article.map(a =>
-                            <SplideSlide>
-                                <h3>Billboard song 2 </h3>
-                                <img className="img" src={"http://localhost:8000" + a.thumbnailURL} alt="Logo" />
-                                <p>Hola Bonco, humpty dumpty hunky dory cracker tork</p>
-
-                                <div className="testButton">
-                                    <button value={a.id} className="redirect" onClick={e => redirection(e)}>Read More</button>
-                                </div>
                             </SplideSlide>)}
 
                     </Splide>
@@ -73,19 +57,13 @@ function Home() {
                         {article.map(a =>
                             <SplideSlide>
 
-                                <img className="img1" src={"http://localhost:8000" + a.thumbnailURL} alt="Logo" />
-                                <h3>Billboard top song</h3>
-                                <p>Hola Bonco, humpty dumpty hunky dory</p>
-
+                                <img className="thumbnail" src={"http://localhost:8000" + a.thumbnailURL} alt="Logo" />
+                                <h3>{a.title}</h3>
+                                <p>{a.content.substring(0,100)+"..."}</p>
+                                <div className="testButton">
+                                    <button value={a.id} className="redirect" onClick={e => redirection(e)}>Read More</button>
+                                </div>
                             </SplideSlide>)}
-                        {article.map(a =>
-                            <SplideSlide>
-                                <img className="img1" src={"http://localhost:8000" + a.thumbnailURL} alt="Logo" />
-                                <h3>Billboard top song1</h3>
-                                <p>Hola Bonco, humpty dumpty hunky dory</p>
-
-                            </SplideSlide>)}
-
                     </Splide>
                 </div>
 

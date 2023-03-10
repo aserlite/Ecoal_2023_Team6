@@ -90,3 +90,7 @@ button {
 .splide__pagination--ltr {
   display: none;
 }
+
+.thumbnail{
+  max-width: 100%;
+}
