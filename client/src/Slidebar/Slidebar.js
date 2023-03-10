@@ -21,6 +21,7 @@ function Slidebar() {
                     <Link to="/"><a id="home" className="menu-item" href="/home">Home</a></Link>
                     <Link to="/articles" id="articles"><a className="menu-item" href="/articles">Articles</a></Link>
                     <Link to="/latest" id="latest"><a className="menu-item" href="/latest">Latests Posts</a></Link>
+                    <Link to="/add"><a id="add" className="menu-item" href="/add">Add an article</a></Link>
                     <Link to="/about" id="about"><a className="menu-item" href="/about">About Us</a></Link>
                 </Menu>
             </div>
