@@ -7,5 +7,7 @@
 }
 
 .article p{
-    padding: 2rem;
+    padding: 4rem;
+    line-height: 0.5rem;
+    text-align: justify;
 }
