@@ -45,7 +45,7 @@ function Home() {
                                 <p>Hola Bonco, humpty dumpty hunky dory cracker tork</p>
 
                                 <div className="testButton">
-                                    <button type="button" >Read More</button>
+                                    <button value={a.id} className="redirect" onClick={e => redirection(e)}>Read More</button>
                                 </div>
                             </SplideSlide>)}
 

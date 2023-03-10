@@ -11,10 +11,11 @@ function Delete(props) {
 
     async function deleteArticle(e){
         console.log(props.cookies.td05.access_token)
-        const deleted = (await axios.post("http://127.0.0.1:8000/api/delete/"+e.target.value,
+        console.log(e.target.value)
+        const deleted = (await axios.delete("http://127.0.0.1:8000/api/delete/"+e.target.value,
             {
                 headers: {
-                    Authorization: "Bearer " + props.cookies.td05.access_token,
+                    "Authorization": "Bearer " + props.cookies.td05.access_token,
                 }
             })).data;
         getArticles();

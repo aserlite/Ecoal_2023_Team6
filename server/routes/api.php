@@ -33,7 +33,7 @@ Route::group([
                          });
 
     Route::post('/addarticle',[Controller::class,'addarticle'])->middleware('admin');
-    Route::post('/delete/{id}',[Controller::class,'deleteArticle'])->middleware('admin');
+    Route::delete('/delete/{id}',[Controller::class,'deleteArticle'])->middleware('admin');
     Route::post('/update/{id}',[Controller::class,'updateArticle'])->middleware('admin');
 
 });
