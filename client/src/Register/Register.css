@@ -48,7 +48,7 @@ input {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    font: 1.25rem / 1.5 sans-serif;
+    font: 1.25rem / 1.5 ;
     display: block;
     box-sizing: border-box;
     width: 80%;

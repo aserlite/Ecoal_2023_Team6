@@ -55,28 +55,33 @@ class Controller extends BaseController
         }
         return($response);
     }
-
+    public function deleteArticle($id){
+        $article = Article::find($id);
+        $article->delete();
+    }
     public function addarticle(Request $request){
-
         $validatedData = $request->validate([
             'title' => 'required|string',
             'content' => 'required|string',
+            'thumbnail' => "file|required",
+            'media' => "file",
+            "mediatype" => "string"
         ]);
+
+        $f = $request->file("thumbnail")->hashName();
+        $request->file('thumbnail')->move("upload", $f);
+
+        $m =$request->file("media")->hashName();
+        $request->file('media')->move("upload", $m);
 
         $article = Article::create([
-
             'title' => $validatedData['title'],
             'content' => $validatedData['content'],
-            'thumbnailURL'=> "/",
-            'mediaType' => "image",
-            'mediaURL'=> "/",
+            'thumbnailURL'=> "/upload/".$f,
+            'mediaType' => $validatedData['mediatype'],
+            'mediaURL'=> "/upload/".$m,
             'leadStory' => 0,
-            'created_at' => date('Y-m-d H:i:s'),
-            'updated_at' => date('Y-m-d H:i:s'),
         ]);
-
-        return response()->json([
-            'result' => "all good",
-        ]);
+        return $article;
     }
 }

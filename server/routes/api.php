@@ -32,7 +32,10 @@ Route::group([
                                 return $request->user();
                          });
 
-    Route::get('/addarticle',[Controller::class,'addarticle'])->middleware('admin');
+    Route::post('/addarticle',[Controller::class,'addarticle'])->middleware('admin');
+    Route::post('/delete/{id}',[Controller::class,'deleteArticle'])->middleware('admin');
+    Route::post('/update/{id}',[Controller::class,'updateArticle'])->middleware('admin');
+
 });
 
 Route::post('/single/{id}',[Controller::class,'singlearticle']);

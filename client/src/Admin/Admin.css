@@ -1,0 +1,24 @@
+.adminPanel{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    font-size: 3rem;
+    gap: 2.5rem;
+    color:black;
+}
+
+.adminPanel a{
+    color:black;
+    padding:1.5rem;
+    box-shadow: 10px 10px 0 #f0ba65 ;
+    border:2.5px #f0ba65 solid;
+    transition:.5s;
+}
+
+.adminPanel a:hover{
+    text-decoration: none;
+    box-shadow: 5px 5px 0 #1a202c ;
+}
