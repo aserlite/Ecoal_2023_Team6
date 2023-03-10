@@ -1,18 +1,17 @@
-:root{
-
-
-}
-    
-nav{
+nav {
   background-color: black;
 }
- 
-.logo{
+
+.logo {
   width: 25%;
 }
 
-.home{
+.home {
   padding: 2rem;
   text-decoration: none;
   color: white;
 }
+
+
+
+
