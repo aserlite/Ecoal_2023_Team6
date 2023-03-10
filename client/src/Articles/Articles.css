@@ -1,4 +1,4 @@
-.article{
+.articles{
     border: solid #f0ba65 10px;  
     display: grid;
     grid-template-columns: repeat(2, 1fr);  

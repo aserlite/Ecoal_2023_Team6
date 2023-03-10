@@ -66,7 +66,7 @@ function Search() {
                 <> <label for="site-search">Search the site:</label>
                     <input type="search" id="site-search" name="searchbar" value={search} onChange={(e) => setSearch(e.target.value)} />
                     <button>Search</button>
-                    {article.map(a => <li > <Link to={'/article/' + a.id}> <h2> {a.title} </h2>
+                    {article.map(a => <li className='list'> <Link to={'/article/' + a.id}> <h1 className='searchtitle'> {a.title} </h1>
                         <br /> <p dangerouslySetInnerHTML={{ __html: a.content }} /> </Link> </li >)} </>
                 :
                 <> <label for="music-select">Type of music:</label>
@@ -77,7 +77,7 @@ function Search() {
                         <option value="rock">Rock</option>
                         <option value="rap">Rap</option>
                     </select>
-                    {articletag.map(a => <li > <Link to={'/article/' + a.id}> <h2> {a.title} </h2>
+                    {articletag.map(a => <li className='list'> <Link to={'/article/' + a.id}> <h1 className='searchtitle'> {a.title} </h1>
                         <br /> <p dangerouslySetInnerHTML={{ __html: a.content }} /> </Link> </li >)}
                 </>}
         </>

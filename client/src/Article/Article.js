@@ -15,7 +15,7 @@ function Article() {
     const [article, setArticle] = useState([])
 
     async function getArticle() {
-        const article = (await axios.post('http://localhost:8000/api/single/'+id)).data
+        const article = (await axios.post('http://localhost:8000/api/single/' + id)).data
         setArticle(article)
         console.log(article)
     }
@@ -28,7 +28,9 @@ function Article() {
     return (
         <>
             <div className="article">
-                <h2>{article.title}</h2><p dangerouslySetInnerHTML={{ __html: article.content }}/>
+                <h1>{article.title}</h1>
+                <img className="img" src={"http://localhost:8000" + article.thumbnailURL} alt="Logo" />
+                <p dangerouslySetInnerHTML={{ __html: article.content }} />
             </div>
         </>
     );

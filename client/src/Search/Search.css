@@ -91,3 +91,15 @@ label[for="music-select"] {
     padding: 0.5rem 0.75rem;
     height: 100%;
 }
+
+.searchtitle{
+    margin-bottom: -2rem;
+}
+
+.list a{
+    color:black;
+}
+
+.list{
+    padding: 2rem 0;
+}

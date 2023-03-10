@@ -28,7 +28,7 @@ function Articles(props) {
         <>
             <div className="allArticles">
                 {articles.map(a => <li > <Link to={'/article/' + a.id}>
-                    <div className='article'>
+                    <div className='articles'>
                         <img className="artthumbnail" src={"http://localhost:8000" + a.thumbnailURL} alt="Logo" />
                         <h2 className='title'> {a.title} </h2> 
                     </div> </Link> </li >)}
