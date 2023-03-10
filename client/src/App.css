@@ -25,3 +25,17 @@
   margin: 2.5rem auto auto;
 
 }
+
+.eachArticle{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 1rem auto 0 auto;
+  border-bottom: solid lightslategray .5px;
+  padding : .5rem 0;
+}
+
+.todelete{
+  margin:0 !important;
+}
