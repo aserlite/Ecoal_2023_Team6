@@ -3,9 +3,15 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import axios from "axios";
 import { useEffect, useState } from "react";
+import {useNavigate} from "react-router-dom";
 
 
 function Home() {
+    const navigate = useNavigate();
+    async function redirection (id){
+        console.log()
+        navigate("/article/"+id);
+    }
     const [article, setArticle] = useState([])
     async function getArticles() {
         const article = (await axios.post('http://localhost:8000/api/allarticle')).data
