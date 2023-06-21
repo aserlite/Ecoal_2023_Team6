@@ -1,4 +1,10 @@
-  nav {
+body{
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+  overflow: overlay;
+}
+nav {
     background-color: black;
   }
 
@@ -38,4 +44,17 @@
 
 .todelete{
   margin:0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb, ::-webkit-scrollbar-thumb:hover {
+  background: #f0ba65;
 }

@@ -63,10 +63,11 @@ function Search() {
             {choice === "title" ?
                 <> <label for="site-search">Search the site:</label>
                     <input type="search" id="site-search" name="searchbar" value={search} onChange={(e) => setSearch(e.target.value)} />
+                    <div className="results">
                     {article.map(a => <li className='list'> <Link to={'/article/' + a.id}> <h1 className='searchtitle'> {a.title} </h1>
-                        <br /> <p dangerouslySetInnerHTML={{ __html: a.content.substring(0,100)+"..." }} /> </Link> </li >
+                        <br /> <p dangerouslySetInnerHTML={{ __html: a.content.substring(0,200)+"..." }} /> </Link> </li >
 
-                    )} </>
+                    )} </div> </>
                 :
                 <> <label for="music-select">Type of music:</label>
                     <select name="music" id="music-select" onChange={handleChange}>
@@ -76,8 +77,10 @@ function Search() {
                         <option value="rock">Rock</option>
                         <option value="rap">Rap</option>
                     </select>
-                    {articletag.map(a => <li className='list'> <Link to={'/article/' + a.id}> <h1 className='searchtitle'> {a.title} </h1>
-                        <br /> <p dangerouslySetInnerHTML={{ __html: a.content.substring(0,100)+"..." }} /> </Link> </li >)}
+                    <div className  ="results">
+                    {articletag.map(a => <li className='list'> <Link to={'/article/' + a.id}> <h1 className='searchtitle'> {a.title}  </h1>
+                        <br /> <p dangerouslySetInnerHTML={{ __html: a.content.substring(0,200)+"..." }} /> </Link> </li >)}
+                    </div>
                 </>}
         </>
     );

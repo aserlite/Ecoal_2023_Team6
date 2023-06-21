@@ -14,7 +14,6 @@ button {
     border: none;
     font-weight: bolder;
 }
-
 .column1 {
     margin-right: 5px;
     margin-left: auto;
@@ -59,19 +58,27 @@ label[for="music-select"] {
 }
 
 #site-search {
-    margin-right: auto;
-    margin-left: auto;
-    text-align: center;
-    max-width: 100%;
     display: block;
     font: 1.25rem / 1.5 sans-serif;
-    display: block;
-    box-sizing: border-box;
-    width: 80%;
-    padding: 0.5rem 0.75rem;
-    height: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    --input-focus: #ccb61f;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: #fff;
+    --main-color: #323232;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
 }
-
 
 #music-select {
     margin-right: auto;
@@ -85,6 +92,8 @@ label[for="music-select"] {
     width: 80%;
     padding: 0.5rem 0.75rem;
     height: 100%;
+    outline: none;
+
 }
 
 .searchtitle {
@@ -93,21 +102,93 @@ label[for="music-select"] {
 
 .list a{
     color:black;
-    max-width: 60%;
     text-align:center ;
 }
 
 .list{
     padding: 1rem 5rem;
+    max-width: 30rem;
 }
 
 .buttons_bar_search{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap:2.5rem;
+    gap: 2.5rem;
+}
+
+.results{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
 }
 
 .buttons_bar_search button{
-    margin : 0 !important;
+    margin: 0 !important;
+    padding: 0.5rem 0.75rem;
+    display: block;
+    height: 40px;
+    background-color: #f0ba65;
+
+    box-sizing: border-box;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    max-width: 50%;
+    margin: auto;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.buttons_bar_search button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.buttons_bar_search button:hover {
+    color: #e8e8e8;
+}
+
+.buttons_bar_search button:hover::before {
+    width: 100%;
+}
+
+#music-select, .buttons_bar_search input{
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    max-width: 50%;
+    margin: auto;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

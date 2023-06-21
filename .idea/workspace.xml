@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b10b5b9-f157-433b-9228-b66c770f2576" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/34a0dc51-533d-4e7e-b916-59f97b981ef5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/34a0dc51-533d-4e7e-b916-59f97b981ef5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/35257c5b-9456-486f-9885-2075eee36479.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/35257c5b-9456-486f-9885-2075eee36479.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ij4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ij4.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Articles/Articles.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Articles/Articles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Articles/Articles.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Articles/Articles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Search/Search.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Search/Search.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Search/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Search/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/Slidebar/Slidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Slidebar/Slidebar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/Slidebar/Slidebar.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/Slidebar/Slidebar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,10 +35,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
     <include_path>
       <path value="$PROJECT_DIR$/server/vendor/ramsey/uuid" />
       <path value="$PROJECT_DIR$/server/vendor/ramsey/collection" />
@@ -144,28 +157,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/aserlite/Desktop/MMI/ecoal/ij4/client/package.json&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/snap/phpstorm/314/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
-    &quot;two.files.diff.last.used.file&quot;: &quot;/home/aserlite/Desktop/MMI/ecoal/ij4/client/package.json&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/aserlite/Desktop/MMI/ecoal/ij4",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/snap/phpstorm/314/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "two.files.diff.last.used.file": "/home/aserlite/Desktop/MMI/ecoal/ij4/client/package.json",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;sqlite&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "sqlite"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/client/src" />
@@ -190,6 +204,12 @@
       <workItem from="1678382339938" duration="8638000" />
       <workItem from="1678440690135" duration="11397000" />
       <workItem from="1678455304456" duration="832000" />
+      <workItem from="1678898631899" duration="198000" />
+      <workItem from="1678901256676" duration="57000" />
+      <workItem from="1678901428510" duration="43000" />
+      <workItem from="1679672133140" duration="726000" />
+      <workItem from="1684678956086" duration="45000" />
+      <workItem from="1687360037079" duration="5047000" />
     </task>
     <servers />
   </component>

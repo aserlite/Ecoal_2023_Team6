@@ -23,10 +23,11 @@ function Slidebar(props) {
                         <Link to="/search" id="search"><a className="menu-item" href="/"> <BsSearch /></a></Link>
 
                     </div>
-                    <Link to="/"><a id="home" className="menu-item" href="/home">Home</a></Link>
-                    <Link to="/articles" id="articles"><a className="menu-item" href="/articles">Articles</a></Link>
-                    <Link to="/latest" id="latest"><a className="menu-item" href="/latest">Latests Posts</a></Link>
-                    <Link to="/about" id="about"><a className="menu-item" href="/about">About Us</a></Link>
+                    <div className="itmC">
+                    <Link to="/"><a id="home" className="menu-item" href="/home">Home</a></Link> <br/> <br/>
+                    <Link to="/articles" id="articles"><a className="menu-item" href="/articles">Articles</a></Link> <br/> <br/>
+                    <Link to="/latest" id="latest"><a className="menu-item" href="/latest">Latests Posts</a></Link> <br/> <br/>
+                    <Link to="/about" id="about"><a className="menu-item" href="/about">About Us</a></Link><br/> <br/></div>
                 </Menu>
             </div>
         </>
